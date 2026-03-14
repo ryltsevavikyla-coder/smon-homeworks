@@ -50,10 +50,11 @@ echo "php_value date.timezone Europe/Moscow" | sudo tee -a /etc/zabbix/apache.co
 sudo systemctl restart zabbix-server zabbix-agent apache2
 sudo systemctl enable zabbix-server zabbix-agent apache2
 
-Скриншот 1-2 (Вход)
 
-https://github.com/user-attachments/assets/88e8b4c1-d60c-42d0-9a60-404ca12c65f7
-https://github.com/user-attachments/assets/1196300d-8e95-4a4c-81ee-b74605e79ceb
+
+#### Скриншот авторизации в админке:
+
+![Авторизация](https://github.com/user-attachments/assets/88e8b4c1-d60c-42d0-9a60-404ca12c65f7?raw=true)
 
 3. [Система мониторинга Zabbix. Часть 2](hw-03.md)
 
