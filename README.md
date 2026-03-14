@@ -54,7 +54,9 @@ sudo systemctl enable zabbix-server zabbix-agent apache2
 
 #### Скриншот авторизации в админке:
 
-![Авторизация](https://github.com/user-attachments/assets/88e8b4c1-d60c-42d0-9a60-404ca12c65f7?raw=true)
+https://github.com/user-attachments/assets/43f11052-9738-445d-bf88-89b56e875879
+
+
 
 3. [Система мониторинга Zabbix. Часть 2](hw-03.md)
 
