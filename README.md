@@ -57,6 +57,57 @@ sudo systemctl enable zabbix-server zabbix-agent apache2
 https://github.com/user-attachments/assets/43f11052-9738-445d-bf88-89b56e875879
 
 
+Задание 2. Установка Zabbix Agent на два хоста
+
+
+Текст использованных команд:
+
+
+На первом хосте (Zabbix Server):
+
+
+sudo apt update
+sudo apt install -y zabbix-agent
+sudo systemctl restart zabbix-agent
+sudo systemctl enable zabbix-agent
+На втором хосте (Ubuntu-Agent):
+
+
+# Добавление репозитория Zabbix
+wget https://repo.zabbix.com/zabbix/6.0/ubuntu/pool/main/z/zabbix-release/zabbix-release_6.0-4+ubuntu22.04_all.deb
+sudo dpkg -i zabbix-release_6.0-4+ubuntu22.04_all.deb
+sudo apt update
+
+# Установка агента
+sudo apt install -y zabbix-agent
+
+# Настройка подключения к серверу
+sudo sed -i 's/Server=127.0.0.1/Server=192.168.1.44/' /etc/zabbix/zabbix_agentd.conf
+sudo sed -i 's/ServerActive=127.0.0.1/ServerActive=192.168.1.44/' /etc/zabbix/zabbix_agentd.conf
+sudo sed -i 's/Hostname=Zabbix server/Hostname=Ubuntu-Agent/' /etc/zabbix/zabbix_agentd.conf
+
+# Запуск агента
+sudo systemctl restart zabbix-agent
+sudo systemctl enable zabbix-agent
+
+
+Скриншот Configuration → Hosts:
+
+https://github.com/user-attachments/assets/a1a0319a-3b7d-4a48-9140-d4552a08b695
+
+
+Скриншот лога zabbix agent:
+
+https://github.com/user-attachments/assets/da5e2d2b-07eb-43cb-8070-19ccfb6c1855
+
+Скриншот раздела Monitoring > Latest data:
+
+https://github.com/user-attachments/assets/78ff0f2a-f07a-4a6f-b1c7-af4534db0387
+https://github.com/user-attachments/assets/e5fbad85-0c8b-473e-aef5-7d217abbacf2
+
+
+
+
 
 3. [Система мониторинга Zabbix. Часть 2](hw-03.md)
 
