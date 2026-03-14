@@ -1,38 +1,5 @@
 # Домашние задания по модулю «Мониторинг»
 
-В этом репозитории расположены ваши домашние задания к каждой лекции. 
-
-Обязательны к выполнению задачи без звездочек. Их нужно выполнить, чтобы получить зачёт.
-
-Задачи со звёздочкой (*) — дополнительные задачи или задачи повышенной сложности. Их выполнять не обязательно, но они помогут вам глубже понять тему.
-
-Любые вопросы по решению задач задавайте в чате учебной группы. Ссылку вы найдёте в письме на вашей электронной почте.
-
-
-
-2. [Система мониторинга Zabbix](hw-02.md)
-
-   
-СКРИНШОТ 1
-
-![Авторизация](https://github.com/ryltsevavikyla-coder/smon-homeworks/raw/main/capture_260314_130703.png)
-
-
-СКРИНШОТ 2
-
-![Хосты](https://github.com/ryltsevavikyla-coder/smon-homeworks/raw/main/capture_260314_143420.png)
-
-СКРИНШОТ 3
-
-![Лог агента](https://github.com/ryltsevavikyla-coder/smon-homeworks/raw/main/capture_260314_162143.png)
-
-СКРИИНШОТ 4
-
-![Latest Data 1](https://github.com/ryltsevavikyla-coder/smon-homeworks/raw/main/capture_260314_163215.png)
-
-СКРИНШОТ 5
-
-![Latest Data 2](https://github.com/ryltsevavikyla-coder/smon-homeworks/raw/main/capture_260314_163259.png)
 
 # Система мониторинга Zabbix
 ## Рыльцева Виктория Михайловна
@@ -43,51 +10,55 @@
 
 #### Текст использованных команд:
 
-```
-# 1. Установка PostgreSQL
+
+
+## 1. Установка PostgreSQL
 sudo apt update
 sudo apt install -y postgresql
 
-# 2. Создание пользователя и базы данных
+## 2. Создание пользователя и базы данных
 sudo -u postgres psql -c "create user zabbix with password 'zabbix';"
 sudo -u postgres psql -c "create database zabbix owner zabbix;"
 
-# 3. Добавление репозитория Zabbix 6.0
+## 3. Добавление репозитория Zabbix 6.0
 wget https://repo.zabbix.com/zabbix/6.0/debian/pool/main/z/zabbix-release/zabbix-release_6.0-4+debian11_all.deb
 sudo dpkg -i zabbix-release_6.0-4+debian11_all.deb
 sudo apt update
 
-# 4. Установка Zabbix сервера и веб-интерфейса
+## 4. Установка Zabbix сервера и веб-интерфейса
 sudo apt install -y zabbix-server-pgsql zabbix-frontend-php zabbix-apache-conf zabbix-sql-scripts zabbix-agent
 
-# 5. Импорт схемы базы данных
+## 5. Импорт схемы базы данных
 zcat /usr/share/zabbix-sql-scripts/postgresql/server.sql.gz | sudo -u zabbix psql zabbix
 
-# 6. Настройка пароля в конфиге
+## 6. Настройка пароля в конфиге
 sudo sed -i 's/# DBPassword=/DBPassword=zabbix/' /etc/zabbix/zabbix_server.conf
 
-# 7. Настройка часового пояса
+## 7. Настройка часового пояса
 echo "php_value date.timezone Europe/Moscow" | sudo tee -a /etc/zabbix/apache.conf
 
-# 8. Запуск сервисов
+## 8. Запуск сервисов
 sudo systemctl restart zabbix-server zabbix-agent apache2
 sudo systemctl enable zabbix-server zabbix-agent apache2
 
 
 
 #### Скриншот авторизации в админке:
-СМОТРЕТЬ СКРИНШОТ 1
+   
+СКРИНШОТ 1
 
-Задание 2. Установка Zabbix Agent на два хоста
+![Авторизация](https://github.com/ryltsevavikyla-coder/smon-homeworks/raw/main/capture_260314_130703.png)
 
-
-Текст использованных команд:
-
-
-На первом хосте (Zabbix Server):
+# Задание 2. Установка Zabbix Agent на два хоста
 
 
-sudo apt update
+## Текст использованных команд:
+
+
+### На первом хосте (Zabbix Server):
+
+
+## sudo apt update
 sudo apt install -y zabbix-agent
 sudo systemctl restart zabbix-agent
 sudo systemctl enable zabbix-agent
@@ -112,22 +83,32 @@ sudo systemctl restart zabbix-agent
 sudo systemctl enable zabbix-agent
 
 
-Скриншот Configuration → Hosts:
+## Скриншот Configuration → Hosts:
 
 СКРИНШОТ 2
 
+![Хосты](https://github.com/ryltsevavikyla-coder/smon-homeworks/raw/main/capture_260314_143420.png)
 
-Скриншот лога zabbix agent:
+
+## Скриншот лога zabbix agent:
 
 СКРИНШОТ 3
 
-Скриншот раздела Monitoring > Latest data:
-
-СМОТРЕТЬ СКРИНШОТЫ 4-5
+![Лог агента](https://github.com/ryltsevavikyla-coder/smon-homeworks/raw/main/capture_260314_162143.png)
 
 
+## Скриншот раздела Monitoring > Latest data:
+
+СКРИИНШОТ 4
+
+![Latest Data 1](https://github.com/ryltsevavikyla-coder/smon-homeworks/raw/main/capture_260314_163215.png)
+
+СКРИНШОТ 5
+
+![Latest Data 2](https://github.com/ryltsevavikyla-coder/smon-homeworks/raw/main/capture_260314_163259.png)
 
 
 
-3. [Система мониторинга Zabbix. Часть 2](hw-03.md)
+
+# 3. [Система мониторинга Zabbix. Часть 2](hw-03.md)
 
