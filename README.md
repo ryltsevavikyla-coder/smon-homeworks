@@ -53,8 +53,8 @@ sudo systemctl enable zabbix-server zabbix-agent apache2
 
 
 #### Скриншот авторизации в админке:
+<img src="https://github.com/ryltsevavikyla-coder/smon-homeworks/raw/main/capture_260314_130703.png" width="600">
 
-![Авторизация](https://github.com/ryltsevavikyla-coder/smon-homeworks/raw/main/capture_260314_130703.png)
 Задание 2. Установка Zabbix Agent на два хоста
 
 
