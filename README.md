@@ -12,7 +12,7 @@
 
 2. [Система мониторинга Zabbix](hw-02.md)
 # Система мониторинга Zabbix
-## Рыльцева Виктория
+## Рыльцева Виктория Михайловна
 
 ---
 
@@ -20,7 +20,7 @@
 
 #### Текст использованных команд:
 
-```bash
+```
 # 1. Установка PostgreSQL
 sudo apt update
 sudo apt install -y postgresql
@@ -54,9 +54,7 @@ sudo systemctl enable zabbix-server zabbix-agent apache2
 
 #### Скриншот авторизации в админке:
 
-https://github.com/user-attachments/assets/43f11052-9738-445d-bf88-89b56e875879
-
-
+![Авторизация](https://github.com/ryltsevavikyla-coder/smon-homeworks/raw/main/capture_260314_130703.png)
 Задание 2. Установка Zabbix Agent на два хоста
 
 
