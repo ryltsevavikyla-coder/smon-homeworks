@@ -11,6 +11,29 @@
 
 
 2. [Система мониторинга Zabbix](hw-02.md)
+
+   
+СКРИНШОТ 1
+
+![Авторизация](https://github.com/ryltsevavikyla-coder/smon-homeworks/raw/main/capture_260314_130703.png)
+
+
+СКРИНШОТ 2
+
+![Хосты](https://github.com/ryltsevavikyla-coder/smon-homeworks/raw/main/capture_260314_143420.png)
+
+СКРИНШОТ 3
+
+![Лог агента](https://github.com/ryltsevavikyla-coder/smon-homeworks/raw/main/capture_260314_162143.png)
+
+СКРИИНШОТ 4
+
+![Latest Data 1](https://github.com/ryltsevavikyla-coder/smon-homeworks/raw/main/capture_260314_163215.png)
+
+СКРИНШОТ 5
+
+![Latest Data 2](https://github.com/ryltsevavikyla-coder/smon-homeworks/raw/main/capture_260314_163259.png)
+
 # Система мониторинга Zabbix
 ## Рыльцева Виктория Михайловна
 
@@ -53,7 +76,7 @@ sudo systemctl enable zabbix-server zabbix-agent apache2
 
 
 #### Скриншот авторизации в админке:
-<img src="https://github.com/ryltsevavikyla-coder/smon-homeworks/raw/main/capture_260314_130703.png" width="600">
+СМОТРЕТЬ СКРИНШОТ 1
 
 Задание 2. Установка Zabbix Agent на два хоста
 
@@ -91,17 +114,16 @@ sudo systemctl enable zabbix-agent
 
 Скриншот Configuration → Hosts:
 
-https://github.com/user-attachments/assets/a1a0319a-3b7d-4a48-9140-d4552a08b695
+СКРИНШОТ 2
 
 
 Скриншот лога zabbix agent:
 
-https://github.com/user-attachments/assets/da5e2d2b-07eb-43cb-8070-19ccfb6c1855
+СКРИНШОТ 3
 
 Скриншот раздела Monitoring > Latest data:
 
-https://github.com/user-attachments/assets/78ff0f2a-f07a-4a6f-b1c7-af4534db0387
-https://github.com/user-attachments/assets/e5fbad85-0c8b-473e-aef5-7d217abbacf2
+СМОТРЕТЬ СКРИНШОТЫ 4-5
 
 
 
