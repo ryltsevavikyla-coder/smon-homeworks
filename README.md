@@ -134,8 +134,8 @@ sudo systemctl enable zabbix-agent
 
 
 
-### Задание 4. Создание дашборда
 
-#### Скриншот созданного дашборда:
+### Задание 4. Создание кастомного дашборда
 
-
+#### Скриншот дашборда:
+![Дашборд](https://github.com/ryltsevavikyla-coder/smon-homeworks/raw/main/capture_260315_164935.png)
