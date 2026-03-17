@@ -122,7 +122,7 @@ sudo systemctl enable zabbix-agent
 ### Задание 1. Создание своего шаблона для мониторинга CPU и RAM
 
 #### Скриншот шаблона с элементами данных:
-![Template CPU-RAM](https://github.com/ryltsevavikyla-coder/smon-homeworks/raw/main/capture_260316_204047.png)
+![Template CPU-RAM](https://github.com/ryltsevavikyla-coder/smon-homeworks/blob/main/capture_260317_105232.png)
 
 ---
 
