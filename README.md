@@ -130,9 +130,9 @@ sudo systemctl enable zabbix-agent
 
 #### Скриншот Configuration → Hosts с новыми именами и настроек хоста с привязанными шаблонами:
 
-![Хосты с шаблонами](https://github.com/ryltsevavikyla-coder/smon-homeworks/raw/main/capture_260315_160607.png)
+![Хосты с шаблонами](https://github.com/ryltsevavikyla-coder/smon-homeworks/blob/main/capture_260317_105937.png)
 
-![Привязка кастомного шаблона](https://github.com/ryltsevavikyla-coder/smon-homeworks/raw/main/capture_260316_205446.png)
+
 
 ### Задание 4. Создание кастомного дашборда
 
