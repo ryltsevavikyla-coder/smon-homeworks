@@ -130,7 +130,7 @@ sudo systemctl enable zabbix-agent
 
 #### Скриншот Configuration → Hosts с новыми именами и настроек хоста с привязанными шаблонами:
 
-![Хосты с шаблонами](https://github.com/ryltsevavikyla-coder/smon-homeworks/blob/main/capture_260317_105937.png)
+![Хосты с шаблонами](https://github.com/ryltsevavikyla-coder/smon-homeworks/blob/main/capture_260317_184253.png)
 
 
 
